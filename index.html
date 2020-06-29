@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Marie D.</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+
+<header>
+
+
+
+<div id="nav-icon" class="nav-active"></div>
+
+	<div class="row header__row nav-active">
+
+
+
+		<ul class="list-flex" id="list-flex">
+		 <li><a href="index.html">Accueil</a></li>
+		<li><a href="#">Projets</a></li>
+		 <li><a href="propos.html">&Agrave; propos</a></li>
+		 <li><a href="contact.html">Contact</a></li>
+		</ul>
+
+		<ul class="header__row__right-menu list-flex">
+		 <li><a href="#">UI/UX</a></li>
+		 <li><a href="#">Graphisme</a></li>
+		 <li><a href="#">Motion</a></li>
+		 <li><a href="#">Illustration</a></li>
+		</ul>
+	</div>
+
+	<div class="col_g">
+
+	<a href="index.html">
+	<img src="img/logo_mrdp.svg" class="logo"></a>
+	</div>
+</header>
+
+
+
+<div class="row header__row">
+	<h1 class="home__heading">Bienvenue, <br>Je suis Marie D.</h1>
+	<h2 class="home__heading__right">Designer graphique &agrave; Bordeaux</h2>
+</div>
+
+
+<div class="row">
+	<div class="parent"> 
+		<a href="beach_goth.html"><div class="grid-item"><img src="img/projet_1.png"> </div> </a>
+
+		<a href="capc.html"><div class="grid-item projet__2"> <img src="img/projet_2.png"></div> </a>
+		<a href="engage.html"><div class="grid-item projet__3"> <img src="img/projet_3.png"></div> </a>
+		<a href="cablecadre.html"><div class="grid-item projet__4"> <img src="img/projet_4.png"></div> </a>
+		<a href="3D_motion.html"><div class="grid-item projet__5"> <img src="img/projet_5.png"></div> </a>
+		<a href="journee.html"><div class="grid-item projet__6"> <img src="img/projet_6.png"></div> </a>
+	</div>
+</div>
+
+
+
+<footer>
+	<div class="row header__row">
+<p>Retrouvez-moi sur : </p>
+</div>
+
+<div class="row">
+<a href="https://www.linkedin.com/in/marie-dupuy-8951b8163/" target="blank"><img src="img/pictos/linkedin.svg" class="picto"></a>
+</div>
+</footer>
+
+
+<script type="text/javascript">
+		// div#top-nav
+		let menuIcon = document.getElementById('nav-icon'); // div#nav-icon [hamburger and close icon, svg] 
+		let topNav = document.getElementById('list-flex');
+		// when hamburger icon is clicked
+		menuIcon.addEventListener('click', function(){
+			// div#top-nav add class .nav-active
+			topNav.classList.toggle('nav-active');
+			// change menu icon from menu-ham-black to menu-close-black.svg (in CSS background)
+			menuIcon.classList.toggle('menu-close');
+		});
+	</script>
+</body>
+</html>
